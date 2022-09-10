@@ -23,6 +23,7 @@ const Question = () => {
   const [isActive, setIsActive] = useState(false);
 
   const [time, setTime] = useState({ s: 0, m: 2 });
+  const [interv, setInterv] = useState();
 
   const {
     status,
@@ -54,7 +55,7 @@ const Question = () => {
     setIsActive(!isActive);
 
     run();
-    setInterval(run, 1000);
+    setInterv(setInterval(run, 1000));
     document.getElementById("instruction").innerHTML = isActive ? "Paused" : "Started";
   }
 
@@ -62,6 +63,7 @@ const Question = () => {
     stopRecording();
     setIsActive(isActive);
     pauseRecording();
+    clearInterval(interv);
     document.getElementById("instruction").innerHTML = "Saved";
     document.getElementById("note").innerHTML = "Your answer is Saved";
 

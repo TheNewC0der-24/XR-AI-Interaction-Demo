@@ -2,10 +2,7 @@ import React from 'react';
 import styles from './ThankYou.module.css';
 import { useNavigate } from 'react-router-dom';
 
-// import thankyou from "../assets/thankyou.svg";
-import architect from "../assets/architect.svg";
-// import campaigner from "../assets/campaigner.svg";
-// import protagonist from "../assets/protagonist.svg";
+import thankyou from "../assets/thankyou.svg";
 
 const ThankYou = () => {
 
@@ -16,7 +13,7 @@ const ThankYou = () => {
             <div className={`${styles.container} container my-5`}>
                 <div className="row">
                     <div className='col-md-4 bg-dark'>
-                        <img className='img-fluid m-auto' src={architect} id="characterImg" alt="ThankYou" />
+                        <img className='img-fluid m-auto' src={thankyou} id="characterImg" alt="ThankYou" />
                     </div>
                     <div className="col-md-8 m-auto">
                         <div className="container my-3">

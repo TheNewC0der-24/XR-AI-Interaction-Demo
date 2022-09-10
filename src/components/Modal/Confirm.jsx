@@ -17,7 +17,7 @@ const Confirm = () => {
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary button" data-bs-dismiss="modal">No</button>
-                            <button type="button" onClick={() => window.location = "/thanks"} className="btn btn-dark button">Yes</button>
+                            <button type="button" onClick={() => window.location.href = "/thanks"} className="btn btn-dark button">Yes</button>
                         </div>
                     </div>
                 </div>
