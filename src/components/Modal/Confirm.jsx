@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Confirm = () => {
 
+    const navigate = useNavigate();
 
     return (
         <>
@@ -18,7 +19,7 @@ const Confirm = () => {
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary button" data-bs-dismiss="modal">No</button>
-                            <Link to="/thanks" target="_blank" className="btn btn-dark button">Yes</Link>
+                            <button onClick={() => navigate('/thanks')} target="_blank" className="btn btn-dark button">Yes</button>
                         </div>
                     </div>
                 </div>

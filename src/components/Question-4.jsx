@@ -102,7 +102,7 @@ const Question4 = () => {
                             </div>
                             <div className='d-flex flex-wrap gap-2'>
                                 <button onClick={handlePrev} className='btn btn-outline-secondary'>Prev</button>
-                                <button className='btn btn-dark' data-bs-toggle="modal" data-bs-target="#confirmModal">Submit</button>
+                                <button className='btn btn-dark' onClick={() => navigate('/thanks')}>Submit</button>
                             </div>
                         </div>
                     </div>
@@ -151,9 +151,8 @@ const Question4 = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-            <Confirm />
+            {/* <Confirm /> */}
         </>
     )
 }
