@@ -3,7 +3,6 @@ import styles from './Question.module.css';
 import { useNavigate } from "react-router-dom";
 import { useReactMediaRecorder } from "react-media-recorder";
 import video4 from '../assets/Video-4.mp4';
-import Confirm from './Modal/Confirm';
 
 const VideoPreview = ({ stream }) => {
     const videoRef = useRef(null);
@@ -152,7 +151,6 @@ const Question4 = () => {
                     </div>
                 </div>
             </div>
-            {/* <Confirm /> */}
         </>
     )
 }
