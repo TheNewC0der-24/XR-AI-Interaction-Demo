@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Confirm = () => {
 
@@ -17,7 +18,7 @@ const Confirm = () => {
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary button" data-bs-dismiss="modal">No</button>
-                            <button type="button" onClick={() => window.location.href = "/thanks"} className="btn btn-dark button">Yes</button>
+                            <Link to="/thanks" target="_blank" className="btn btn-dark button">Yes</Link>
                         </div>
                     </div>
                 </div>
