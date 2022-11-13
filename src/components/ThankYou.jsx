@@ -3,6 +3,7 @@ import styles from './ThankYou.module.css';
 import { useNavigate } from 'react-router-dom';
 
 import thankyou from "../assets/thankyou.svg";
+import report from "../assets/aCLOUD.pdf";
 
 const ThankYou = () => {
 
@@ -24,7 +25,10 @@ const ThankYou = () => {
                                 detailed feedback on the same within next 72 hours.
                             </p>
                             <p className='mt-4 text-dark'>Now you can close this window!!</p>
-                            <button onClick={() => navigate("/response")} className='btn btn-dark'>Check Answers</button>
+                            <div className='d-flex gap-2'>
+                                <button onClick={() => navigate("/response")} className='btn btn-dark'>Check Answers</button>
+                                <a className='btn btn-dark' href={report} target="_blank" rel="noopener noreferrer">Feedback Report</a>
+                            </div>
                         </div>
                     </div>
                 </div>
